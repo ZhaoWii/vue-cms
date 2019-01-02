@@ -5,6 +5,10 @@ import Vue from 'vue'
 import router from './router'
 Vue.config.productionTip = false
 
+// 安装vue-resource 之后 才可以使用Vue.$http对象
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
+
 // 按需导入Mint-UI 中的组件
 // import { Header } from 'mint-ui'
 
